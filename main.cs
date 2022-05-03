@@ -1,8 +1,8 @@
 
-// Created by: Kenny Le
+// Created by: Jaejun Lee
 // Created on: Apr 2022
 //
-// This program calculates the pizza cost
+// This program calculates the cost of a pizza
 
 using System;
 
@@ -19,16 +19,15 @@ class Program
         double totalCost;
 
         // input
-        Console.WriteLine("Welcome to Kenny's Pizzeria!");
-        Console.WriteLine("Today we will be calculating your pizza order");
+        Console.WriteLine("Pizza Order, with CSharp");
         Console.WriteLine("");
 
         void pizzaSize()
         {
-            Console.WriteLine("Please enter the size of pizza you would like (use the abbreviation):");
+            Console.WriteLine("Which pizza would you like to order? (Write L or XL)");
             Console.WriteLine("");
-            Console.WriteLine("Large (L) - $6.00");
-            Console.WriteLine("Extra Large (XL) - $10.00");
+            Console.WriteLine("Large (L): $6.00");
+            Console.WriteLine("Extra Large (XL): $10.00");
             sizeChoice = Console.ReadLine();
 
             if (sizeChoice == "L")
@@ -42,7 +41,7 @@ class Program
             else
             {
                 Console.Clear();
-                Console.WriteLine("Please choose a valid size of pizza.");
+                Console.WriteLine("Please write L or XL");
                 pizzaSize();
             }
         }
@@ -51,12 +50,12 @@ class Program
         {
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("Please enter the amount of toppings you would like:");
+            Console.WriteLine("How many toppings would you like to order? (1-4)");
             Console.WriteLine("");
-            Console.WriteLine("One Topping (1) - $1.00");
-            Console.WriteLine("Two Toppings (2) - $1.75");
-            Console.WriteLine("Three Toppings (3) - $2.50");
-            Console.WriteLine("Four Toppings (4) - $3.35");
+            Console.WriteLine("1 topping ($1.00)");
+            Console.WriteLine("2 toppings ($1.75)");
+            Console.WriteLine("3 toppings ($2.50)");
+            Console.WriteLine("4 toppings ($3.35)");
             toppingChoice = Convert.ToDouble(Console.ReadLine());
             if (toppingChoice == 1)
             {
@@ -77,7 +76,7 @@ class Program
             else
             {
                 Console.Clear();
-                Console.WriteLine("Please choose a valid amount of toppings.");
+                Console.WriteLine("Please write a number 1-4");
                 pizzaToppings();
             }
         }
