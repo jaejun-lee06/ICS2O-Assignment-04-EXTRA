@@ -89,7 +89,7 @@ class Program
         totalCost = (sizePrice + toppingPrice) * TAX_RATE;
 
         // output
-        Console.WriteLine("The cost of a " + sizeChoice + "arge" + " " + toppingChoice + " topping" + " pizza is $" + totalCost.ToString("0.00") + ".");
+        Console.WriteLine("The cost of a " + sizeChoice + "Large" + " " + toppingChoice + " topping" + " pizza is $" + totalCost.ToString("0.00") + ".");
 
         Console.WriteLine("\nDone.");
     }
